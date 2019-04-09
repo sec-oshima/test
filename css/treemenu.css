@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+/* ツリーメニュー */
+ul.tree_menu ul {
+	display: none;
+}
+
+ul.tree_menu li {
+	list-style-type: none;
+	line-height: 1.8em;
+	margin-bottom: 1.1em;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+ul.tree_menu input[type=checkbox] {
+	position: absolute;
+	opacity: 0;
+	display: none;
+}
+
+/* 第1階層 */
+ul.tree_menu label,
+ul.tree_menu a {
+	position: relative;
+	display: block;
+/*	padding: 8px 10px; */
+}
+
+/* アイコンの位置 */
+ul.tree_menu label:before {
+	content: '';
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 20px;
+	-webkit-transform: translateY(-20px);
+	-moz-transform: translateY(-20px);
+	-ms-transform: translateY(-20px);
+	-o-transform: translateY(-20px);
+	transform: translateY(-20px);
+}
+ul.tree_menu a:after {
+	content: '';
+	display: inline;
+	/*padding-right: 20px;*/
+	width: 16px;
+	height: 16px;
+	position: relative;
+	top: 80%;
+	-webkit-transform: translateY(-80%);
+	-moz-transform: translateY(-80%);
+	-ms-transform: translateY(-80%);
+	-o-transform: translateY(-80%);
+	transform: translateY(-80%);
+}
+/*ul.tree_menu label:before,
+ul.tree_menu a:after {
+	content: '';
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+ul.tree_menu a.long:after {
+	content: '';
+	display: inline;
+	padding-right: 20px;
+	width: 16px;
+	height: 16px;
+	position: relative;
+	top: 80%;
+	-webkit-transform: translateY(-80%);
+	-moz-transform: translateY(-80%);
+	-ms-transform: translateY(-80%);
+	-o-transform: translateY(-80%);
+	transform: translateY(-80%);
+}*/
+
+/* 第1階層 */
+ul.tree_menu label {
+	cursor: pointer;
+	padding-left: 30px;
+}
+
+/* 丸矢印アイコン（90度傾ける）*/
+ul.tree_menu label:before {
+	background-image: url("../images_common/arrow_01.png");
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	left: 0px;
+	-webkit-transform: translateY(-50%) rotate(-90deg);
+	-moz-transform: translateY(-50%) rotate(-90deg);
+	-ms-transform: translateY(-50%) rotate(-90deg);
+	-o-transform: translateY(-50%) rotate(-90deg);
+	transform: translateY(-50%) rotate(-90deg);
+}
+
+/* オレンジ矢印アイコン（文字の後ろから8px離す） */
+/*ul.tree_menu li {
+	background-image: url("../images_common/arrow_02.png");
+	background-repeat: no-repeat;
+	background-position: top right;
+	padding-top: 4px;
+	padding-right: 16px;
+	text-align: left;
+	vertical-align: middle;
+}*/
+ul.tree_menu a:after {
+	background-image: url("../images_common/arrow_02.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	/*padding-right: 8px;*/
+	padding-right: 22px;
+	text-align: left;
+	vertical-align: bottom;
+}
+
+/* 丸矢印アイコンを下に向ける */
+ul.tree_menu input[type=checkbox]:checked + label:before {
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+ul.tree_menu input[type=checkbox]:checked + label + ul,
+ul.tree_menu input[type=checkbox]:checked + label:nth-of-type(n) + ul {
+	display: block;
+}
+
+/* 第2階層文字の位置 */
+ul.tree_menu ul label,
+ul.tree_menu ul a {
+	padding-left: 55px;
+}
+
+/* 第2階層の丸矢印の位置 */
+ul.tree_menu ul label:before {
+	left: 25px;
+}
+
+/* 第3階層文字の位置 */
+ul.tree_menu ul ul label,
+ul.tree_menu ul ul a {
+	padding-left: 80px;
+}
+
+/* 第3階層の丸矢印の位置 */
+ul.tree_menu ul ul label:before {
+	left: 50px;
+	top:20px;
+}
+
+/* 第4階層文字の位置 */
+ul.tree_menu ul ul ul label,
+ul.tree_menu ul ul ul a {
+	padding-left: 105px;
+}
+
+/* 第4階層の丸矢印の位置 */
+ul.tree_menu ul ul ul label:before {
+	left: 75px;
+}
+
+/* 第5階層文字の位置 */
+ul.tree_menu ul ul ul ul label,
+ul.tree_menu ul ul ul ul a {
+	padding-left: 130px;
+}
+
+/* アイコン回転の速さ */
+ul.tree_menu.animated label:before {
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+}
+
+ul.tree_menu label a,
+ul.tree_menu ul label a,
+ul.tree_menu ul ul label a,
+ul.tree_menu ul ul label a {
+	padding-left: 0px;
+/*	border: 1px solid red;*/		/* デバッグ用 */
+}
+
+/* 目次・説明書改版履歴の位置調整 */
+ul.tree_menu div {
+	padding-left: 28px;
+}
+
+/* リンクを無効にした場合のスタイル設定（デモ用機能） */
+/* 第2階層文字の位置 */
+ul.tree_menu ul span {
+	position: relative;
+	display: block;
+	padding-left: 86px;
+	padding-bottom: 12px;
+}
+/* 第3階層文字の位置 */
+ul.tree_menu ul ul span {
+	position: relative;
+	display: block;
+	padding-left: 142px;
+	padding-bottom: 12px;
+}
+/* 第4階層文字の位置 */
+ul.tree_menu ul ul ul span {
+	position: relative;
+	display: block;
+	padding-left: 196px;
+	padding-bottom: 12px;
+}
+/* 第5階層文字の位置 */
+ul.tree_menu ul ul ul ul span {
+	position: relative;
+	display: block;
+	padding-left: 250px;
+	padding-bottom: 12px;
+}/* リンクを無効にした場合のスタイル設定（デモ用機能）終了 *//* ツリーメニュー終了 */

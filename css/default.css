@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/* ----------------------- Browser Default Initialization */
+html {
+    overflow-y: scroll;
+}
+html, body {
+	height: 100%;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h2, h3, h5, h6,
+pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    margin: 0;  padding: 0;  Zoom: 1;
+}
+address, caption, cite, code, dfn, em, strong, th, var  {
+    font-style: normal;
+}
+table   {
+    border-collapse: collapse;  border-spacing: 0;
+}
+caption, th {
+    text-align: left;
+}
+q:before ,q:after   {
+    content: '';
+}
+object, embed   {
+    vertical-align: top;
+}
+hr, legend  {
+    display: none;
+}
+h1, h2, h3, h4, h5, h6  {
+    font-size: 1em;
+		font-weight: normal;
+}
+img, abbr, acronym, fieldset    {
+    border: 0;
+}
+ul, ol, li { zoom: normal; }
+li  {
+    list-style-type: none;
+}
+
+/* ----------------------- Basic Style */
+/* ------------ Font Style */
+body {
+	font-family: verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;  
+	background-color: #FFF;
+	color: #333;
+	font-size: 14px;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+/* ------------ A Style */
+a:link  {
+	text-decoration: none;
+	color: #00F;
+}
+ a:visited   {
+	text-decoration: none;
+	color: #00F;
+}
+a:hover {
+	text-decoration: underline;
+	color: #00F;
+}
+a:active    {
+	text-decoration: none;
+	color: #00F;
+}
+
+/* テーブル内で改行しない */
+.noWrap  {
+	white-space: nowrap;
+}
+
+/* 表示しない */
+.noDisp {
+	display: none;
+}
+
+/*floatの解除*/
+.clearfix:after {
+	display:block;
+	clear:both;
+	height:0px;
+	visibility:hidden;
+	content:".";
+}
+.clearfix {
+	min-height: 1px; /*IE6、7対策*/
+}
+html .clearfix {
+	height: 1px; /*¥*//*/ /*MAC IE5.x対策*/
+	height: auto;
+	overflow: hidden;
+}
+
+
+/* 画面サイズが680px以下の場合 */
+@media screen and (max-width: 680px) {
+  font-size: 16px;
+}

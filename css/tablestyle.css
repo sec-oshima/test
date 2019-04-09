@@ -1,0 +1,418 @@
+﻿@charset "utf-8";
+
+.format_tbl01,
+.format_tbl01_thBorder,
+.format_tbl01_noBorder {
+	margin: 0 auto 16px;
+	width: 96%;
+	table-layout: fixed;
+}
+.format_tbl02,
+.format_tbl02_thBorder,
+.format_tbl02_noBorder {
+	margin: 0 auto 16px;
+	width: 60%;
+	table-layout: fixed;
+}
+.format_tbl03,
+.format_tbl03_thBorder,
+.format_tbl03_noBorder {
+	margin: 0 auto 16px;
+	width: 50%;
+	table-layout: fixed;
+}
+.format_tbl01,
+.format_tbl01_thBorder,
+.format_tbl01_thBorder th,
+.format_tbl02,
+.format_tbl02_thBorder,
+.format_tbl02_thBorder th {
+	border-collapse: collapse;
+	border: 1px solid #000;
+}
+.format_tbl01 th,
+.format_tbl01_noBorder th,
+.format_tbl01_thBorder th,
+.format_tbl02 th,
+.format_tbl02_noBorder th,
+.format_tbl02_thBorder th{
+	text-align: center;
+	vertical-align: top;
+	font-weight: bold;
+	font-size: 1.2em;
+	padding: 1px 8px;
+}
+.format_tbl01 td,
+.format_tbl01_noBorder td,
+.format_tbl01_thBorder td,
+.format_tbl02 td,
+.format_tbl02_noBorder td,
+.format_tbl02_thBorder td{
+	text-align: left;
+	vertical-align: top;
+	padding: 1px 8px;
+}
+.td01,
+.first_td01 td:first-child,
+.first_td01 th:first-child,
+.second_td01 td:nth-of-type(2),
+.second_td01 th:nth-of-type(2),
+.third_td01 td:nth-of-type(3),
+.third_td01 th:nth-of-type(3),
+.forth_td01 td:nth-of-type(4),
+.forth_td01 th:nth-of-type(4) {
+	width: 1.1em;
+}
+.td02,
+.first_td02 td:first-child,
+.first_td02 th:first-child,
+.second_td02 td:nth-of-type(2),
+.second_td02 th:nth-of-type(2),
+.third_td02 td:nth-of-type(3),
+.third_td02 th:nth-of-type(3),
+.forth_td02 td:nth-of-type(4),
+.forth_td02 th:nth-of-type(4) {
+	width: 3.3em;
+}
+.td03,
+.first_td03 td:first-child,
+.first_td03 th:first-child,
+.second_td03 td:nth-of-type(2),
+.second_td03 th:nth-of-type(2),
+.third_td03 td:nth-of-type(3),
+.third_td03 th:nth-of-type(3),
+.forth_td03 td:nth-of-type(4),
+.forth_td03 th:nth-of-type(4) {
+	width: 5.5em;
+}
+.td04,
+.first_td04 td:first-child,
+.first_td04 th:first-child,,
+.second_td04 td:nth-of-type(2),
+.second_td04 th:nth-of-type(2),
+.third_td04 td:nth-of-type(3),
+.third_td04 th:nth-of-type(3),
+.forth_td04 td:nth-of-type(4),
+.forth_td04 th:nth-of-type(4) {
+	width: 7.7em;
+}
+.td05,
+.first_td05 td:first-child,
+.first_td05 th:first-child,
+.second_td05 td:nth-of-type(2),
+.second_td05 th:nth-of-type(2),,
+.third_td05 td:nth-of-type(3),
+.third_td05 th:nth-of-type(3),
+.forth_td05 td:nth-of-type(4),
+.forth_td05 th:nth-of-type(4) {
+	width: 9.9em;
+}
+.td06,
+.first_td06 td:first-child,
+.first_td06 th:first-child,
+.second_td06 td:nth-of-type(2),
+.second_td06 th:nth-of-type(2),
+.third_td06 td:nth-of-type(3),
+.third_td06 th:nth-of-type(3),
+.forth_td06 td:nth-of-type(4),
+.forth_td06 th:nth-of-type(4) {
+	width: 12.1em;
+}
+.td07,
+.first_td07 td:first-child,
+.first_td07 th:first-child,
+.second_td07 td:nth-of-type(2),
+.second_td07 th:nth-of-type(2),
+.third_td07 td:nth-of-type(3),
+.third_td07 th:nth-of-type(3),
+.forth_td07 td:nth-of-type(4),
+.forth_td07 th:nth-of-type(4) {
+	width: 8.4em;
+}
+
+.image_tbl01,
+.image_tbl02,
+.image_tbl05 {
+	border-collapse: collapse;
+	border:1px solid #000;
+	width: 96%;
+	margin: 4px auto 16px;
+}
+.image_tbl02_noBorder {
+	width: 96%;
+	margin: 4px auto 16px;
+}
+.image_tbl03 {
+	border-collapse: collapse;
+	border: 1px solid #000;
+	width: 50%;
+	margin: 4px auto 16px;
+}
+.image_tbl01 th,
+.image_tbl02 th,
+.image_tbl03 th,
+.image_tbl05 th {
+	background-color: #ccc;
+	border-collapse: collapse;
+	border: 1px solid #000;
+	border-color: #000;
+	text-align: center;
+	vertical-align: top;
+	font-weight: bold;
+	padding: 4px 8px;
+}
+.image_tbl01 td,
+.image_tbl03 td,
+.image_tbl05 td {
+	background-color: #fff;
+	border-collapse: collapse;
+	border: 1px solid #000;
+	text-align: center;
+	vertical-align: middle;
+	padding: 4px;
+}
+.image_tbl02 td {
+	background-color: #fff;
+	border-collapse: collapse;
+	border: 1px solid #000;
+	text-align: center;
+	vertical-align: middle;
+	padding: 4px;
+	width: 50%;
+}
+
+.image_tbl02_noBorder td {
+	text-align: center;
+	vertical-align: middle;
+	padding: 4px;
+	width: 50%;
+
+}
+.image_tbl01 p,
+.image_tbl02 p,
+.image_tbl03 p {
+	text-align: left;
+	padding: 1px 4px;
+}
+
+td.bg_kakkoR {
+	background-image: url("../images_common/kakko.png");
+	background-size: 22px 96%;
+	background-repeat: no-repeat;
+	background-position: 1px 1px;
+/*	padding-left: 8%;*/
+	width: 22px;
+/*	border: 1px solid red;*/
+	padding: 0;
+}
+td.bg_kakkoL {
+	background-image: url("../images_common/kakko_l.png");
+	background-size: 22px 96%;
+	background-repeat: no-repeat;
+	background-position: 1px 1px;
+/*	padding-left: 5%;*/
+	width: 22px;
+}
+td.bg_yajiA {
+	background-image: url("../images_common/bg_yajiA.png");
+	background-size: 25px 96%;
+	background-repeat: no-repeat;
+	background-position: 6px 1px;
+	width: 35px;
+	padding: 0;
+}
+td.bg_yajiB {
+	background-image: url("../images_common/bg_yajiB.png");
+	background-size: 25px 96%;
+	background-repeat: no-repeat;
+	background-position: 6px 1px;
+	width: 35px;
+	padding: 0;
+}
+
+td.labelLarge {
+	text-align: left;
+	vertical-align: top;
+	font-size: 1.2em;
+	padding: 1px 8px;
+}
+td.labelLargeBold {
+	text-align: left;
+	vertical-align: top;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 1px 8px;
+}
+td.labelLargeIndent {
+	text-align: left;
+	vertical-align: top;
+	font-size: 1.2em;
+	padding: 1px 8px 1px 24px;
+}
+td.labelNormal {
+	text-align: left;
+	vertical-align: top;
+	padding: 1px 8px;
+}
+td.labelNormalIndent {
+	text-align: left;
+	vertical-align: top;
+	padding: 1px 8px 1px 24px;
+}
+td.labelBold {
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	padding: 1px 8px;
+}
+td.labelBoldIndent {
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	padding: 1px 8px 1px 24px;
+}
+td.labelLargeBoldIndent {
+	text-align: left;
+	vertical-align: top;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 1px 8px 1px 24px;
+}
+
+table.solidBorder td {
+	border-collapse: collapse;
+	border: 1px solid #000;
+}
+table.dashedBorder td {
+	border-collapse: collapse;
+	border: 1px dashed #ccc;
+}
+
+td.item_right {
+	text-align: right;
+}
+td.item_left {
+	text-align: left;
+}
+td.item_center {
+	text-align: center;
+}
+td.item_top {
+	vertical-align: top;
+}
+td.item_bottom {
+	vertical-align: bottom;
+}
+td.item_middle {
+	vertical-align: middle;
+}
+
+/* --------------------------------
+テーブル設定
+-------------------------------- */
+.content_tbl01,
+.content_tbl01_frame,
+.content_tbl01_noBoder,
+.content_tbl01td_left,
+.content_tbl01td_left_frame,
+.content_tbl01td_left_noBoder {
+	width: 96%;
+	margin: 0 auto 16px;
+}
+.content_tbl02,
+.content_tbl02_frame,
+.content_tbl02_noBoder,
+.content_tbl02td_left,
+.content_tbl02td_left_frame,
+.content_tbl02td_left_noBoder{
+	width: 60%;
+	margin: 0 auto 16px;
+}
+.content_tbl01,
+.content_tbl01 th,
+.content_tbl01 td,
+.content_tbl01_frame,
+.content_tbl01_frame th,
+.content_tbl02,
+.content_tbl02 th,
+.content_tbl02 td,
+.content_tbl01_frame,
+.content_tbl01_frame th {
+	border: 1px solid #000;
+}
+.content_tbl01 th,
+.content_tbl01_frame th,
+.content_tbl02 th,
+.content_tbl02_frame th {
+	background-color: #ccc;
+	text-align: center;
+	vertical-align: middle;
+	padding: 2px 2px;
+}
+.content_tbl01 td,
+.content_tbl01_frame td,
+.content_tbl02 td,
+.content_tbl02_frame td {
+	background-color: #fff;
+	text-align: left;
+	vertical-align: middle;
+	padding: 2px 2px;
+}
+
+th.tt_center,
+td.tr_center {
+	text-align: center;
+	vertical-align: middle;
+}
+th.tt_left,
+td.tr_left {
+	text-align: left;
+	vertical-align: middle;
+}
+th.tt_right,
+td.tr_right {
+	text-align: right;
+	vertical-align: middle;
+}
+th.tt_middle,
+td.tr_middle {
+	vertical-align: middle;
+}
+th.tt_top,
+td.tr_top {
+	vertical-align: top;
+}
+th.tt_bottom,
+td.tr_bottom {
+	vertical-align: bottom;
+}
+
+.tcap01 {
+	caption-side: top;
+	text-align: center;
+	font-size: 0.9em;
+	font-weight: bold;
+	margin: 2px 0;
+}
+.figcap {
+	caption-side: bottom;
+	text-align: center;
+	font-size: 0.9em;
+	font-weight: bold;
+	margin: 2px 0;
+}
+
+.area02 {
+	margin: 0 0 0 2.4em;
+}
+.area03 {
+	margin: 0 0 0 4.8em;
+}
+
+.nowrap{
+	white-space: nowrap;
+}
+
+.third_td02 {
+	width: 
+}
